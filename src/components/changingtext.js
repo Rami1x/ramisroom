@@ -19,8 +19,8 @@ function ChangingList() {
 
         console.log(showMessage);
         
-        return () => clearInterval(intervalId); // Cleanup interval on unmount
-    }, [items.length]); // Depend on the length of items
+        return () => clearInterval(intervalId); 
+    }, [items.length]); 
 
     return (
         <div>

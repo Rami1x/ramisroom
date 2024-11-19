@@ -58,9 +58,9 @@ h2 {
     font-family: 'Cool', sans-serif;
     color: #fff; 
     font-size: 2rem; 
-    width: 200px; /* Set a fixed width for the text */
-    text-align: center; /* Center text within its fixed width */
-    white-space: nowrap; /* Prevent text from wrapping */
+    width: 200px; 
+    text-align: center; 
+    white-space: nowrap; 
 }
 
 .flex-container > h2 {

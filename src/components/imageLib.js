@@ -28,16 +28,16 @@ function Pictures() {
 
   const [selectedImage, setSelectedImage] = useState(null);
   const [description, setDescription] = useState("");
-  const descriptionRef = useRef(null); // Reference for the description
+  const descriptionRef = useRef(null);
 
   const handleImageClick = (index) => {
     setSelectedImage(imageSort[index].src);
-    setDescription(imageSort[index].description); // Set the custom description
+    setDescription(imageSort[index].description);
 
-    // Scroll to the description after it appears
+
     setTimeout(() => {
       descriptionRef.current?.scrollIntoView({ behavior: "smooth" });
-    }, 100); // Small delay to ensure description renders first
+    }, 100); 
   };
 
   return (

@@ -20,7 +20,7 @@
 }
 
 .image-thumb {
-    width: 150px; /* Maintain original size */
+    width: 150px; 
     height: auto;
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
