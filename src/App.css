@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: 'Cool';
+    src: url('./components/font/Magic Retro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+    text-shadow: rgb(52, 182, 169) 1px 0 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    background-image: linear-gradient(to bottom, rgb(17, 12, 49), rgb(0, 0, 0));
+    scrollbar-color: rgb(65, 40, 80) black;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    text-align: center;
+    color: azure;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1:hover {
+    cursor: grab;
 }
 
-.App-link {
-  color: #61dafb;
+#particles canvas {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.AppearLogo {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+}
+
+.AppearLogo img {
+    z-index: 1;
+    transform-origin: center;
+    animation: imgdance 5s linear infinite;
+    width: auto; /* Maintain original width */
+    height: auto; /* Maintain original height */
+}
+
+h2 {
+    margin-left: 20px; 
+    font-family: 'Cool', sans-serif;
+    color: #fff; 
+    font-size: 2rem; 
+    width: 200px; /* Set a fixed width for the text */
+    text-align: center; /* Center text within its fixed width */
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.flex-container > h2 {
+    display: flex;
+    align-items: center;
 }

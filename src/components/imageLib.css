@@ -1,0 +1,58 @@
+/* Same CSS you provided earlier */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-list {
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.image-list li {
+    margin: 10px;
+}
+
+.image-thumb {
+    width: 150px; /* Maintain original size */
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    transition: transform 0.3s ease;
+}
+
+.image-thumb:hover {
+    transform: scale(1.1);
+}
+
+/* Fade-in effect for the description */
+.image-description {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.image-description.fade-in {
+    opacity: 1;
+}
+
+.image-description p {
+    color: #fff;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.h1 {
+    font-style: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: rgb(52, 182, 169) 1px 0 10px;
+}

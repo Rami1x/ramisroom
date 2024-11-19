@@ -1,0 +1,25 @@
+@keyframes imgdance {
+    from {transform: rotate(0);}
+    to {transform: rotate(360deg);}
+}
+
+.AppearLogo {
+    z-index: 3;
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+    margin-bottom: 100px;
+
+}
+
+.AppearLogo img {
+    z-index: 1;
+    left: 10px;
+    transform-origin: center;
+    animation: imgdance 5s linear infinite;
+    animation-name: imgdance;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
